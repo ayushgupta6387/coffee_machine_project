@@ -14,6 +14,17 @@ public class CoffeeMachine {
         System.out.println();
         System.out.print("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu: ");
         String choice = scanner.next();
+        switch (choice) {
+            case "1": {
+                if (canMakeCoffee(250, 0, 16)) {
+                    water -= 250;
+                    beans -= 16;
+                    cups--;
+                    money += 4;
+                    break;
+                }
+            }
+        }
     }
 
     public boolean canMakeCoffee(int waterNeed, int milkNeed, int beansNeed) {
