@@ -24,6 +24,16 @@ public class CoffeeMachine {
                     break;
                 }
             }
+            case "2": {
+                if (canMakeCoffee(350, 75, 20)) {
+                    water -= 350;
+                    milk -= 75;
+                    beans -= 20;
+                    cups--;
+                    money += 7;
+                    break;
+                }
+            }
         }
     }
 
