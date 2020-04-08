@@ -24,8 +24,8 @@ public class CoffeeMachine {
             if (milkLevel > milk) {
                 cupsMilk = milkLevel / milk;
             }
-            if (beanLevel > milk) {
-                cupsBeans = beanLevel / milk;
+            if (beanLevel > beans) {
+                cupsBeans = beanLevel / beans;
             }
         }
         int cupsMax = Math.min(Math.min(cupsWater, cupsMilk), cupsBeans);
@@ -34,6 +34,8 @@ public class CoffeeMachine {
         } else if (cupsNeed < cupsMax) {
             System.out.println("Yes, I can make that amount of coffee (and even "
                     + (cupsMax - cupsNeed) + " more than that");
+        } else {
+            System.out.println("Yes, I can make that amount of coffee");
         }
     }
 }
