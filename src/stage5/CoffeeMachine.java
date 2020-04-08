@@ -9,6 +9,7 @@ public class CoffeeMachine {
     int beans = 120;
     int cups = 9;
     int money = 550;
+    boolean exit = false;
 
     public void buy() {
         System.out.println();
@@ -91,6 +92,12 @@ public class CoffeeMachine {
         System.out.println(cups + " of disposable cups");
         System.out.println(money + " of money");
         System.out.println();
+    }
+
+    public void exit() {
+        //System.out.println("exit() called");
+
+        exit = true;
     }
 
 
