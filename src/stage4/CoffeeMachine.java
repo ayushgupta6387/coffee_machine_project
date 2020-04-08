@@ -49,12 +49,13 @@ public class CoffeeMachine {
             case "fill": {
                 System.out.print("Write how many ml of water do you want to add: ");
                 int waterAdd = scanner.nextInt();
+                System.out.print("Write how many ml of milk do you want to add: ");
+                int milkAdd = scanner.nextInt();
+                System.out.print("Write how many grams of coffee beans do you want to add: ");
+                int beansAdd = scanner.nextInt();
             }
-            System.out.print("Write how many ml of milk do you want to add: ");
-            int milkAdd = scanner.nextInt();
         }
     }
-
     static public void display() {
         System.out.println("The coffee machine has:");
         System.out.println(water + " of water");
