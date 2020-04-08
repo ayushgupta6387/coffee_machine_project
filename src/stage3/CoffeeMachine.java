@@ -21,6 +21,9 @@ public class CoffeeMachine {
         int cupsBeans = 0;
         if (waterLevel > water) {
             cupsWater = waterLevel / water;
+            if (milkLevel > milk) {
+                cupsMilk = milkLevel / milk;
+            }
         }
     }
 }
