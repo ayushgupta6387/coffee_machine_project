@@ -20,6 +20,8 @@ public class CoffeeMachine {
         System.out.println(beans + " of coffee beans");
         System.out.println(cups + " of disposable cups");
         System.out.println(money + " of money");
+        System.out.println();
+        System.out.print("Write action (buy, fill, take): ");
     }
 
 }
