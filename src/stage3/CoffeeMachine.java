@@ -28,5 +28,9 @@ public class CoffeeMachine {
                 cupsBeans = beanLevel / milk;
             }
         }
+        int cupsMax = Math.min(Math.min(cupsWater, cupsMilk), cupsBeans);
+        if (cupsNeed > cupsMax) {
+            System.out.println("No, I can make only " + cupsMax + " cup(s) of coffee");
+        }
     }
 }
