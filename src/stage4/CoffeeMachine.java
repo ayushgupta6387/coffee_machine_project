@@ -13,6 +13,11 @@ public class CoffeeMachine {
         Scanner scanner = new Scanner(System.in);
         display();
         String action = scanner.nextLine();
+        switch (action) {
+            case "buy": {
+                System.out.print("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino: ");
+            }
+        }
     }
 
     static public void display() {
