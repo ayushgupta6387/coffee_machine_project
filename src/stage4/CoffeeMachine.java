@@ -61,6 +61,10 @@ public class CoffeeMachine {
                 cups += cupsAdd;
                 break;
             }
+            case "take": {
+                System.out.println("I gave you $" + money);
+                money = 0;
+            }
         }
     }
     static public void display() {
