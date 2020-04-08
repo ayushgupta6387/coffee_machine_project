@@ -53,6 +53,8 @@ public class CoffeeMachine {
                 int milkAdd = scanner.nextInt();
                 System.out.print("Write how many grams of coffee beans do you want to add: ");
                 int beansAdd = scanner.nextInt();
+                System.out.print("Write how many disposable cups of coffee do you want to add: ");
+                int cupsAdd = scanner.nextInt();
             }
         }
     }
