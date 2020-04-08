@@ -24,6 +24,9 @@ public class CoffeeMachine {
             if (milkLevel > milk) {
                 cupsMilk = milkLevel / milk;
             }
+            if (beanLevel > milk) {
+                cupsBeans = beanLevel / milk;
+            }
         }
     }
 }
