@@ -16,6 +16,8 @@ public class CoffeeMachine {
         switch (action) {
             case "buy": {
                 System.out.print("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino: ");
+                int task = scanner.nextInt();
+                System.out.println();
             }
         }
     }
