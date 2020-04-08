@@ -14,5 +14,7 @@ public class CoffeeMachine {
         int milkLevel = scanner.nextInt();
         System.out.print("Write how many grams of coffee beans the coffee machine has: ");
         int beanLevel = scanner.nextInt();
+        System.out.print("Write how many cups of coffee you will need: ");
+        int cupsNeed = scanner.nextInt();
     }
 }
