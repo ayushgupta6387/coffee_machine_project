@@ -8,5 +8,7 @@ public class CoffeeMachine {
         int water = 200;
         int milk = 50;
         int beans = 15;
+        System.out.print("Write how many ml of water the coffee machine has: ");
+        int waterLevel = scanner.nextInt();
     }
 }
