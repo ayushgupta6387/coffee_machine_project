@@ -26,6 +26,15 @@ public class CoffeeMachine {
                         money += 4;
                         break;
                     }
+                    case 2: {
+                        water -= 350;
+                        milk -= 75;
+                        beans -= 20;
+                        cups--;
+                        money += 7;
+                        break;
+                    }
+                    
                 }
             }
         }
