@@ -18,6 +18,15 @@ public class CoffeeMachine {
                 System.out.print("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino: ");
                 int task = scanner.nextInt();
                 System.out.println();
+                switch (task) {
+                    case 1: {
+                        water -= 250;
+                        beans -= 16;
+                        cups--;
+                        money += 4;
+                        break;
+                    }
+                }
             }
         }
     }
