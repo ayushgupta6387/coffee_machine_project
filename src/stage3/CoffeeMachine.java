@@ -31,6 +31,9 @@ public class CoffeeMachine {
         int cupsMax = Math.min(Math.min(cupsWater, cupsMilk), cupsBeans);
         if (cupsNeed > cupsMax) {
             System.out.println("No, I can make only " + cupsMax + " cup(s) of coffee");
+        } else if (cupsNeed < cupsMax) {
+            System.out.println("Yes, I can make that amount of coffee (and even "
+                    + (cupsMax - cupsNeed) + " more than that");
         }
     }
 }
