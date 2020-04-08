@@ -13,8 +13,9 @@ public class CoffeeMachine {
         Scanner scanner = new Scanner(System.in);
     }
 
-    static public void summary() {
-
+    static public void display() {
+        System.out.println("The coffee machine has:");
+        System.out.println(water + " of water");
     }
 
 }
