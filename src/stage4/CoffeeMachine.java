@@ -11,6 +11,8 @@ public class CoffeeMachine {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        display();
+
     }
 
     static public void display() {
