@@ -13,5 +13,8 @@ public class CoffeeMachine {
         System.out.println("For " + cups + " cups of coffee you will need: ");
         System.out.println((cups * water) + " ml of water");
         System.out.println((cups * milk) + " ml of milk");
+        System.out.println((cups * beans) + " g of coffee beans");
+
+
     }
 }
