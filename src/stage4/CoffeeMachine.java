@@ -43,6 +43,12 @@ public class CoffeeMachine {
                         break;
                     }
                 }
+
+                break;
+            }
+            case "fill": {
+                System.out.print("Write how many ml of water do you want to add: ");
+                int waterAdd = scanner.nextInt();
             }
         }
     }
