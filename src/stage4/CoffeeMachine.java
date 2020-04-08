@@ -12,7 +12,7 @@ public class CoffeeMachine {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         display();
-
+        String action = scanner.nextLine();
     }
 
     static public void display() {
