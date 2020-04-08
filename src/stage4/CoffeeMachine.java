@@ -18,6 +18,8 @@ public class CoffeeMachine {
         System.out.println(water + " of water");
         System.out.println(milk + " of milk");
         System.out.println(beans + " of coffee beans");
+        System.out.println(cups + " of disposable cups");
+        System.out.println(money + " of money");
     }
 
 }
