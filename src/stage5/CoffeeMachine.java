@@ -76,6 +76,12 @@ public class CoffeeMachine {
         cups += cupsAdd;
     }
 
+    public void take() {
+        //System.out.println("take() called");
+        System.out.println("I gave you $" + money);
+        money = 0;
+    }
+
 
     public boolean canMakeCoffee(int waterNeed, int milkNeed, int beansNeed) {
         if (water >= waterNeed) {
