@@ -93,14 +93,6 @@ public class CoffeeMachine {
         System.out.println(money + " of money");
         System.out.println();
     }
-
-    public void exit() {
-        //System.out.println("exit() called");
-
-        exit = true;
-    }
-
-
     public boolean canMakeCoffee(int waterNeed, int milkNeed, int beansNeed) {
         if (water >= waterNeed) {
             if (milk >= milkNeed) {
