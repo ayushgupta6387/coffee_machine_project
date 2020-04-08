@@ -16,6 +16,7 @@ public class CoffeeMachine {
     static public void display() {
         System.out.println("The coffee machine has:");
         System.out.println(water + " of water");
+        System.out.println(milk + " of milk");
     }
 
 }
