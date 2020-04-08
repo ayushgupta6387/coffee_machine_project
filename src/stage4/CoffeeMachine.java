@@ -65,7 +65,9 @@ public class CoffeeMachine {
                 System.out.println("I gave you $" + money);
                 money = 0;
             }
+            break;
         }
+        display();
     }
     static public void display() {
         System.out.println("The coffee machine has:");
