@@ -50,6 +50,8 @@ public class CoffeeMachine {
                 System.out.print("Write how many ml of water do you want to add: ");
                 int waterAdd = scanner.nextInt();
             }
+            System.out.print("Write how many ml of milk do you want to add: ");
+            int milkAdd = scanner.nextInt();
         }
     }
 
