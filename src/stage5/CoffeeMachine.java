@@ -15,4 +15,9 @@ public class CoffeeMachine {
         System.out.print("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu: ");
         String choice = scanner.next();
     }
+
+    public boolean canMakeCoffee(int waterNeed, int milkNeed, int beansNeed) {
+
+        return false;
+    }
 }
