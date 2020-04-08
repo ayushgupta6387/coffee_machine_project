@@ -46,6 +46,9 @@ public class CoffeeMachine {
                 }
 
             }
+            case "back": {
+                break;
+            }
         }
     }
 
