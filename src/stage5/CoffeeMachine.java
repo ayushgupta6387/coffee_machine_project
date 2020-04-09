@@ -89,6 +89,17 @@ public class CoffeeMachine {
         money = 0;
     }
 
+    static void remaining() {
+        System.out.println();
+        System.out.println("The coffee machine has:");
+        System.out.println(water + " of water");
+        System.out.println(milk + " of milk");
+        System.out.println(beans + " of coffee beans");
+        System.out.println(cups + " of disposable cups");
+        System.out.println(money + " of money");
+        System.out.println();
+    }
+
     static boolean canMakeCoffee(int waterNeed, int milkNeed, int beansNeed) {
         if (water >= waterNeed) {
             if (milk >= milkNeed) {
