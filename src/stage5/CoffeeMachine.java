@@ -21,5 +21,27 @@ public class CoffeeMachine {
         System.out.println();
         System.out.print("What do you want to buy? 1 - espresso, 2 - latte, 3 - cappuccino, back - to main menu: ");
         String choice = scanner.next();
+
+    }
+
+    static boolean canMakeCoffee(int waterNeed, int milkNeed, int beansNeed) {
+        if (water >= waterNeed) {
+            if (milk >= milkNeed) {
+                if (beans >= beansNeed) {
+                    System.out.println("I have enough resources, making you a coffee\n!");
+                    return true;
+                } else {
+                    System.out.println("Sorry, not enough beans!");
+                    return false;
+                }
+
+            } else {
+                System.out.println("Sorry, not enough milk!");
+                return false;
+            }
+        } else {
+            System.out.println("Sorry, not enough water!");
+            return false;
+        }
     }
 }
