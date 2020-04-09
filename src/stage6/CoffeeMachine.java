@@ -94,24 +94,17 @@ public class CoffeeMachine {
     }
 
     public boolean canMakeCoffee(int waterNeed, int milkNeed, int beansNeed) {
-        if (water >= waterNeed) {
-            if (milk >= milkNeed) {
-                if (beans >= beansNeed) {
-                    System.out.println("I have enough resources, making you a coffee!");
-                    return true;
-                } else {
-                    System.out.println("Sorry, not enough beans!");
-                    return false;
-                }
-
-            } else {
-                System.out.println("Sorry, not enough milk!");
-                return false;
-            }
-        } else {
+        if (water >= waterNeed && milk >= milkNeed && beans >= beansNeed) {
+            System.out.println("I have enough resources, making you a coffee!");
+            return true;
+        } else if (water < waterNeed) {
             System.out.println("Sorry, not enough water!");
+            return true;
+        } else if (milk < milkNeed) {
+            System.out.println("Sorry, not enough milk!");
+        } else {
+            System.out.println("Sorry, not enough beans!");
         }
-
         return false;
     }
 }
