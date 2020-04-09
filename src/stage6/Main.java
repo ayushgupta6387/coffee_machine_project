@@ -1,4 +1,4 @@
-package stage5;
+package stage6;
 
 import java.util.Scanner;
 
