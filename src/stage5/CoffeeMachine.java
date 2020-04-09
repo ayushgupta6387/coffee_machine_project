@@ -17,9 +17,26 @@ public class CoffeeMachine {
         while (!loop) {
             System.out.print("Write action (buy, fill, take, remaining, exit): ");
             String action = scanner.next();
-
+            switch (action) {
+                case "buy":
+                    buy();
+                    break;
+                case "fill":
+                    fill();
+                    break;
+                case "take":
+                    take();
+                    break;
+                case "remaining":
+                    remaining();
+                    break;
+                case "exit":
+                    loop = true;
+                    break;
+            }
         }
     }
+
 
     static void buy() {
         System.out.println();
@@ -68,7 +85,6 @@ public class CoffeeMachine {
     }
 
     static void fill() {
-        //System.out.println("fill() called");
         System.out.println();
         System.out.print("Write how many ml of water do you want to add: ");
         int waterAdd = scanner.nextInt();
@@ -105,23 +121,17 @@ public class CoffeeMachine {
     }
 
     static boolean canMakeCoffee(int waterNeed, int milkNeed, int beansNeed) {
-        if (water >= waterNeed) {
-            if (milk >= milkNeed) {
-                if (beans >= beansNeed) {
-                    System.out.println("I have enough resources, making you a coffee\n!");
-                    return true;
-                } else {
-                    System.out.println("Sorry, not enough beans!");
-                    return false;
-                }
-
-            } else {
-                System.out.println("Sorry, not enough milk!");
-                return false;
-            }
-        } else {
+        if (water >= waterNeed && milk >= milkNeed && beans >= beansNeed) {
+            System.out.println("I have enough resources, making you a coffee!");
+            return true;
+        } else if (water < waterNeed) {
             System.out.println("Sorry, not enough water!");
-            return false;
+            return true;
+        } else if (milk < milkNeed) {
+            System.out.println("Sorry, not enough milk!");
+        } else {
+            System.out.println("Sorry, not enough beans!");
         }
+        return false;
     }
 }
