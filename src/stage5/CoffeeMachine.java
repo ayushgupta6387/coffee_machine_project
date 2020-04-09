@@ -10,11 +10,15 @@ public class CoffeeMachine {
     static int cups = 9;
     static int money = 550;
 
-    static Boolean exit = false;
+    static Boolean loop = false;
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
+        while (!loop) {
+            System.out.print("Write action (buy, fill, take, remaining, exit): ");
+            String action = scanner.next();
 
+        }
     }
 
     static void buy() {
